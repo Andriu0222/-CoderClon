@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 40px;
+  display: grid;
+  height: 100vh;
+
+  /* GRID AREAS */
+  grid-template-areas:
+    "encabezado encabezado encabezado"
+    "contenido contenido publicidad"
+    "pie pie publicidad";
+
+  grid-template-columns: repeat(2, 1fr) 200px;
+  grid-template-rows: repeat(2, 1fr) 100px;
+}
+
+header {
+  background-color: aqua;
+  grid-area: encabezado;
+}
+
+main {
+  background-color: blueviolet;
+  grid-area: contenido;
+}
+
+aside {
+  background-color: greenyellow;
+  grid-area: publicidad;
+}
+
+footer {
+  background-color: chocolate;
+  grid-area: pie;
+}
+
+.grid {
+  display: grid;
+  background-color: black;
+  height: 600px;
+  color: white;
+  font-size: 40px;
+
+  /* COLUMNAS*/
+  /* grid-template-columns: 1fr 1fr auto; */
+
+  /* cantidad, medida 
+  grid-template-columns: repeat(3, auto);*/
+
+  /* FILAS */
+  /* grid-template-rows: repeat(3, 1fr); */
+
+  /* ESPACIOS ENTRE CELDAS */
+  /* column-gap: 20px;
+    row-gap: 40px; 
+
+  gap: 60px 40px;  
+   HORIZONTAL
+ justify-items: center;
+
+  VERTICAL 
+   align-items: center;  
+
+   POSICIONAR ELEMENTOS COMO GRUPO 
+   justify-content: center */
+}
+
+.grid__item {
+  border: 5px solid chocolate;
+}
+
+.self {
+  /* HORIZONTAL */
+  justify-self: center;
+
+  /* VERTICAL */
+  align-self: center;
+}

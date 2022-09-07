@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 02</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header></header>
+    <!-- contenido principal -->
+    <main>
+      <!-- listas -->
+      <section>
+        <!-- Lista ordenada -->
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ol>
+
+        <!-- Listas desordenadas -->
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+
+          <!-- Listas anidadas -->
+          <ol>
+            <li>
+              Compras pendientes:
+              <ul>
+                <li>Azucar</li>
+                <li>Pan</li>
+              </ul>
+            </li>
+
+            <li>
+              Actividades:
+              <ol>
+                <li>Caminar</li>
+                <li>Viajar</li>
+              </ol>
+            </li>
+          </ol>
+        </ul>
+      </section>
+
+      <!-- TABLAS -->
+
+      <section>
+        <table border="1">
+          <!-- Encabezado de tabla -->
+          <thead>
+            <!-- fila de tabla -->
+            <tr>
+              <!-- columnas ppales -->
+              <th>Producto</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <!-- Contenido ppa de la tabla -->
+          <tbody>
+            <tr>
+              <!-- columnas del contenido -->
+              <td>Monitor</td>
+              <td>5</td>
+              <td>$321</td>
+            </tr>
+            <tr>
+              <!-- columnas del contenido -->
+              <td>Mouse</td>
+              <td>10</td>
+              <td>$123</td>
+            </tr>
+          </tbody>
+          <!-- pie de tabla -->
+          <tfoot>
+            <tr>
+              <td>Totales</td>
+              <td>15</td>
+              <td>$444</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <!-- FORMULARIOS -->
+
+      <section>
+        <hr />
+        <form action="send.php" method="get" enctype="multipart/form-data">
+          <!-- Textos -->
+          <input type="text" placeholder="Escriba su nombre" />
+          <input type="email" placeholder="Escriba su email" />
+          <input type="password" placeholder="Escriba su contraseña" />
+          <textarea
+            cols="30"
+            rows="10"
+            placeholder="Escriba su mensaje"
+          ></textarea>
+          <hr />
+          <!-- control de selecciones -->
+
+          <input type="radio" name="Tecnologia" id="html" />
+          <label for="html">HTML</label>
+
+          <input type="radio" name="Tecnologia" id="css" />
+          <label for="css">CSS</label>
+
+          <input type="radio" name="Tecnologia" id="js" />
+          <label for="js">JavaScript</label>
+
+          <!-- menu desplegable -->
+          <hr />
+          <fieldset>
+            <legend>Selecione su pais</legend>
+            <select>
+              <option>Colombia</option>
+              <option>Mexico</option>
+              <option value="">Paraguay</option>
+            </select>
+          </fieldset>
+
+          <!-- casillas de seleccion -->
+          <hr />
+          <input type="checkbox" id="check" />
+          <label for="check">Aceptar los terminos y condiciones</label>
+          <hr />
+
+          <!-- BOTONES -->
+          <button type="submit">Envíar información</button>
+          <button type="reset">Limpiar formulario</button>
+        </form>
+      </section>
+
+      <!-- ENLACES -->
+      <section>
+        <hr />
+        <!-- Enlace relativo -->
+        <a href="pages/productos.html">Ir al listado de productos</a>
+
+        <!-- Enlace absoluto -->
+        <a href="https://coderhouse.com">Ir a coderhouse</a>
+      </section>
+
+      <!-- IFRAME -->
+
+      <section>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/erjwCQ-UZyw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </main>
+    <!-- Pie de pagina -->
+    <footer></footer>
+  </body>
+</html>

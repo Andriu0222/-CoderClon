@@ -1,0 +1,100 @@
+body {
+  font-size: 150%;
+}
+
+/* Breakpoint: punto de quiebre */
+/********************* MOBILE FIRST ***********************/
+/* min-width: desde hacia arriba*/
+/* Breakpoint van ordenados de menor a mayor */
+
+/* @media (min-width: 400px) {
+    h1{
+        color: blue;
+    }
+} */
+/* @media screen and (min-width: 500px) */
+/* @media (min-width: 500px) {
+  h1 {
+    color: green;
+  }
+} */
+
+/********************** MOBILE LAST *******************/
+/* max-width: hasta */
+/* BP van ordenados de mayor a menor */
+
+/* @media (max-width: 700px) {
+  h1 {
+    color: purple;
+  }
+}
+
+@media (max-width: 500px) {
+  p {
+    color: chocolate;
+  }
+
+  img {
+    display: none;
+  }
+}
+
+@media print {
+    img{
+        border-radius: 20px;
+        border: 10px solid black;
+    }
+} */
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  /* Alternativa 1 */
+  /* display: flex; */
+}
+
+header ul li {
+  margin: 0 20px;
+  /* Alternativa 2 */
+  display: inline-block;
+}
+
+header span {
+  display: none;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+@media (max-width: 600px){
+    section{
+        grid-template-columns: 1fr;
+    }
+
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 550px){
+    header{
+        flex-direction: row;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    header span{
+        display: inline-block;
+    }
+}

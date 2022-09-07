@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  background-color: black;
+  padding: 15px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.navbar a:hover {
+  color: greenyellow;
+}
+
+.navbar a:active {
+  text-decoration: underline;
+}
+
+.navbar li:nth-child(3) {
+  background-color: gray;
+}
+
+.navbar li::before {
+  content: "\2771";
+  color: white;
+}
+
+.navbar li:hover:first-child::before{
+    content: "\261D" ;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+  margin-top: 30px;
+}
+
+p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+p::first-letter {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Mobile last: max-width -> de mayor a menor los BP */
+/* @media (max-width: 992px) {
+  h1 {
+    color: blue;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    color: green;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin: 15px 0;
+    display: inline-block;
+  }
+} */
+
+/* Mobile firts: min-width -> de menor a mayor los BP */
+/* @media (min-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin: 15px 0;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    color: green;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    color: blue;
+  }
+} */
+
+/* operador and */
+@media (min-width: 760px) and (max-width: 770px) {
+  h1 {
+    color: orange;
+  }
+}
+
+/* OPERADOR OR */
+/* landscape: ancho es mayor al alto */
+/* potrait: alto es mayor al ancho */
+
+@media (max-width: 468px), (orientation: landscape) {
+  h1 {
+    color: purple;
+  }
+}

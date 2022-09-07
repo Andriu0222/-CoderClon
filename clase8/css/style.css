@@ -1,0 +1,108 @@
+.gradient {
+  height: 200px;
+  /* GRADIENTE */
+  background-image: linear-gradient(140deg, red, blue 28% 80%, yellow);
+
+  /* background-image: radial-gradient(circle, red, blue, yellow); */
+}
+
+/* TRANSFORMACIONES */
+.transform {
+  width: 250px;
+  height: 250px;
+  margin-top: 30px;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+
+  /* x, y */
+  /* transform: translate(50px, 100px); */
+
+  /* y, x 
+  transform: rotateX(60deg);*/
+
+  /* 0 a 1 sera mas peqeño
+    1.1 + Aumentara tamaño
+  */
+  /* transform: scale(1); */
+  /* transform: skew(10deg, 20deg); */
+  /* transform: scale(0.5) skew(10deg); */
+
+
+  /* TRANSICIONES */
+  /* transition: transform .5s, background-color .8s, color 2s; */
+  transition: all .5s;
+}
+
+.transform:hover{
+    transform: translateX(50px);
+    background-color: gray;
+    color: black;
+}
+
+.input{
+    margin-top: 30px;
+    padding: 10px;
+    outline: none;
+    width: 20px;
+    transition: border .3s, width .4s;
+}
+
+.input:focus{
+    border: 2px solid red;
+    width: 300px;
+}
+
+.sky{
+    width: 300px;
+    height: 300px;
+    background-color: cornflowerblue;
+    position: relative;
+    animation-name: skySunset;
+    animation-duration: 5s;
+    /* animation-iteration-count: 3; */
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+/* linea de tiempo */
+@keyframes skySunset{
+    0%{
+        background-color: cornflowerblue;
+    }
+    100%{
+        background-color: darkblue;
+    }
+}
+
+.sun{
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 110px;
+    animation-name: sunMove;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sunMove {
+    0%{
+        top: 20px;
+    }
+    50%{
+        background-color: orange;
+    }
+    100%{
+        background-color: orangered;
+        top: 260px
+    }
+}
+
+.ground{
+    width: 300px;
+    height: 100px;
+    background-color: green;
+}

@@ -1,0 +1,32 @@
+.flex {
+  background-color: gray;
+  display: flex;  
+  height: 500px; 
+  /*flex-wrap: wrap;*/
+  /*flex-direction: row;*/
+
+  /* flex-direction, flex-wrap*/
+  flex-flow: row wrap ;
+}
+
+.box {
+  background-color: white;
+  border: 2px solid black;
+  font-size: 30px;
+  padding: 15px;
+}
+
+.child1{
+align-self: flex-start;
+order: 3;
+}
+
+.child2{
+align-self: center;
+order: 2;
+}
+
+.child3{
+align-self: flex-end;
+order: 1;
+}
